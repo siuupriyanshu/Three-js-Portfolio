@@ -22,6 +22,8 @@ import {
     carrent,
     jobit,
     tripguide,
+    chat,
+    blog,
     threejs,
   } from "../assets";
   
@@ -151,7 +153,7 @@ import {
     {
       name: "Blog App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A simple and intuitive web-based blog platform for creating, reading, and sharing posts, designed for both casual and professional writers.",
       tags: [
         {
           name: "react",
@@ -166,37 +168,16 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: blog,
+      source_code_link: "https://github.com/siuupriyanshu/MERN-Blog",
     },
     {
       name: "Job IT",
       description:
-        "Stay connected with friends, family, and colleagues through our intuitive chat platform. Enjoy real-time messaging, seamless communication across devices. Experience fast loading times.",
+        "A user-friendly job search platform that connects job seekers with employers, offering easy job listings, applications, and real-time updates.",
       tags: [
         {
           name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
           color: "blue-text-gradient",
         },
         {
@@ -204,12 +185,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "shadcn ui",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: jobit,
+      source_code_link: "https://github.com/siuupriyanshu/Job-IT",
+    },
+    {
+      name: "Chat App",
+      description:
+        "A real-time chat app offering seamless messaging, group chats, and file sharing, designed for fast and easy communication.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: chat,
+      source_code_link: "https://github.com/siuupriyanshu/Chat-App",
     },
   ];
   

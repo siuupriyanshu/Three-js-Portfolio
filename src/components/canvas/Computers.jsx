@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import img from "../../../public/images/portfolio.jpg"
 
 import CanvasLoader from "../Loader";
 
@@ -56,6 +57,10 @@ const ComputersCanvas = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
+
+  if(isMobile){
+    return <img src={img} className="w-full h-screen"  />
+  }
 
   return (
     <Canvas
