@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import img from "../../../public/images/portfolio.jpg"
+import img from "../../../public/images/person.png"
 
 import CanvasLoader from "../Loader";
 
@@ -59,8 +59,12 @@ const ComputersCanvas = () => {
   }, []);
 
   if(isMobile){
-    return <img src={img} className="w-full h-screen"  />
-  }
+     return <>
+     <div className="min-h-screen flex items-center justify-center">
+     <img src={img} alt="pic" width={200} className=" mt-72" />
+     </div>
+     </>
+   }
 
   return (
     <Canvas

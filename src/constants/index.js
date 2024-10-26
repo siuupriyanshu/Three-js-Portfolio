@@ -40,6 +40,14 @@ import {
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "linkedin",
+      title: "Linkedin",
+    },
+    {
+      id: "whatsapp",
+      title: "Whatsapp",
+    },
   ];
   
   const services = [
@@ -61,7 +69,7 @@ import {
     },
   ];
   
-  const technologies = [
+  const skills = [
     {
       name: "HTML 5",
       icon: html,
@@ -215,4 +223,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, skills, experiences, testimonials, projects };

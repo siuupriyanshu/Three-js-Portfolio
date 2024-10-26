@@ -51,17 +51,26 @@ const Navbar = () => {
       </Link>
 
       <ul className='list-none hidden sm:flex flex-row gap-10'>
-        {navLinks.map((nav) => (
-          <li
-            key={nav.id}
-            className={`${
-              active === nav.title ? "text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
-            onClick={() => setActive(nav.title)}
-          >
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
-        ))}
+      {navLinks.map((nav) => (
+  <li
+    key={nav.id}
+    className={`${
+      active === nav.title ? "text-white" : "text-secondary"
+    } hover:text-white text-[18px] font-medium cursor-pointer`}
+    onClick={() => {
+      setActive(nav.title);
+      if (nav.id === "linkedin") {
+        window.open("https://www.linkedin.com/in/priyanshu-mandal-55b07b294/", "_blank");
+      }
+      if(nav.id === "whatsapp"){
+        window.open("https://wa.me/9864086391?text=Hello%20Priyanshu%2C%20I%20would%20like%20to%20connect%20with%20you.", "_blank");
+      }
+    }}
+  >
+    <a href={`#${nav.id}`}>{nav.title}</a>
+  </li>
+))}
+
       </ul>
 
       <div className='sm:hidden flex flex-1 justify-end items-center'>
